@@ -18,8 +18,7 @@ for item in range(2,number+1):
             i+=1
 
       if valid:
-            print(f"{item} is a prime")
+            
             counter +=1
-      else:
-            print(f"{item} is not a prime")
-print(f"there are {counter} prime number in {number}")
+      
+print(f"there are {counter} prime number less than {number}")
