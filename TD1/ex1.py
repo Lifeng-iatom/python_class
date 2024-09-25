@@ -41,9 +41,3 @@ def validate_date(day, month, year):
     else:
         print(f"{day:02d} {month:02d} {year} is an invalid date.")
 
-# Test cases
-validate_date(30, 2, 2015)  # Expected: Invalid date (February can't have 30 days)
-validate_date(31, 1, 2017)  # Expected: Valid date
-validate_date(31, 4, 2021)  # Expected: Invalid date (April can't have 31 days)
-validate_date(29, 2, 2020)  # Expected: Valid date (Leap year)
-validate_date(29, 2, 2019)  # Expected: Invalid date (Not a leap year)
