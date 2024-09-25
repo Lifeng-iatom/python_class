@@ -8,9 +8,8 @@ valid = True
       
 if day >=1 and day<=31:
       if month >= 1 and month <=12:
-            if month in (2,4,6,9,11):
-                  if day > 30:
-                        valid = False
+            if month in (4,6,9,11) and day > 30:
+                  valid = False
             elif month == 2 and year%4 == 0:
                   if day > 29:
                         valid = False
@@ -18,7 +17,7 @@ if day >=1 and day<=31:
                   if day > 28:
                         valid = False
       else:
-                  valid = False
+            valid = False
 else:
       valid = False
 
