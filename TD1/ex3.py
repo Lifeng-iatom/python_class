@@ -1,12 +1,10 @@
 #!/usr/bin/env python3.11
 number = int(input("input an interger number:"))
 
-
-
-
 if number < 2:
       print("input a number greater than 1")
       number = int(input("input an interger number:"))
+
 
 for item in range(2,number+1):
       valid = True
