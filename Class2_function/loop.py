@@ -18,7 +18,7 @@ def seqence(firstvalue,a,b,n):
 print(seqence(1,2,1,3))
 
 def fac(n):
-      if n == 1:
+      if n <= 1:
             return 1
       else:
             return n * fac(n-1)
