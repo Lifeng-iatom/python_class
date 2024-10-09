@@ -15,16 +15,17 @@ def draw(n):
       print("Close the graphic to continue...")
       plt.show()
 
-def record(n):
-      record_list = [max_alt(n)]
-      for i in range(1,n):
-            if max_alt(i) > max_alt(n):
-                  return "it's not a recod"
-                  break
-            record_list.append(max_alt(i))
-      return record_list
+def record(u):
+      i =1
+      rec =0
+      while i<=u:
+            max = max_alt(i)
+            if max > rec:
+                  print(f"{i}:{max}")
+                  rec = max
+            i +=1
 
-print(record(17))
+record(17)
 
 
                         
