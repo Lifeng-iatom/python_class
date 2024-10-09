@@ -1,16 +1,19 @@
 #!/usr/bin/env python3.11
 import math
 def shrink_min(s):
-      s_min = sorted(s)
-      s.pop(s.index(s_min[0]))
+      min_s = min(s)
+      for item in s:
+            if item == min_s:
+                  s.pop(s.index(item))
+      
       return s
 
-grades = [12, 18, 9, 5, 14, 2, 16, 19, 15, 13, 10]
+grades = [2, 18, 9, 5, 14, 2, 16, 19, 15, 13, 10]
 print(shrink_min(grades))
 
 def sortedm(nb, m):
       return sorted(nb,key = lambda n: n%m)
-
+grades = [2, 18, 9, 5, 14, 2, 16, 19, 15, 13, 10]
 print(sortedm(grades,6))
 
 def mean_geo(nb):
