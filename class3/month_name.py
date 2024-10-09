@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.11
 MONTHS = ("jan", "feb", "mar", "apr", "may", "jun",
       "jul", "aug", "sep", "oct", "nov", "dec")
 print(MONTHS[1])
@@ -16,11 +17,13 @@ def period(m1,m2):
             print("Error")
 
       if m1 < m2:
-            return MONTHS[m1:m2-1]
+            return MONTHS[m1-1:m2]
       else:
             return None
 print(period(1,5))
+def print_months():
+      for (i,m) in enumerate(MONTHS):
+            print(f"{i+1}:{m}")
 
-
-
+print_months()
 
